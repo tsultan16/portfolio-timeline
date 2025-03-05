@@ -1,2 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #ff3737;
+  --color-secondary: #5865f2;
+}
+
+
+@layer components {
+
+  .timeline-icon {
+    @apply h-10 w-10 p-1 box-border bg-gray-800/20 text-teal-200
+     hover:text-teal-100 hover:bg-green-800 
+     rounded-xl hover:rounded-3xl transition-all duration-300 ease-linear
+     hover:-rotate-25;
+  }
+
+  .sidebar-label {
+    @apply absolute w-auto p-2 m-2 min-w-max left-16
+      rounded-md shadow-md
+      text-white bg-gray-900
+      text-xs font-bold
+      transition-all duration-150 origin-left scale-0 group-hover:scale-100
+  }
+}
