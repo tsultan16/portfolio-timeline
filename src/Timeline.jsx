@@ -19,11 +19,16 @@ const Timeline = ({ defaultColor }) => {
                     return (
                         <div key={element.id} className="flex m-4 relative">
                             
-                            <div className={`${color} w-0.5 h-6 translate-x-15 translate-y-73 opacity-60 sm:hidden`}>
+                            {/* <div className={`${color} w-0.5 h-6 translate-x-17 translate-y-73 opacity-60 sm:hidden`}>
+                            </div> */}
+                            <div className={`${color} w-0.5 h-5 self-end translate-x-17 translate-y-5 opacity-60 sm:hidden`}>
                             </div>
-                            
-                            <div className={`${color} w-0.5 h-6 translate-x-69 translate-y-73 opacity-60 sm:hidden`}>   
+
+                            <div className={`${color} w-0.5 h-5 self-end translate-x-82 translate-y-5 opacity-60 sm:hidden`}>
                             </div>
+
+                            {/* <div className={`${color} w-0.5 h-6 translate-x-69 translate-y-73 opacity-60 sm:hidden`}>   
+                            </div> */}
 
                             <div className="hidden items-start w-44 pt-0.5 relative sm:flex">
                                 <div className='w-4/5 text-gray-500'>{element.date}</div>
